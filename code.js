@@ -6,6 +6,9 @@ function calculaIMC() {
     altura = parseFloat(document.getElementById("edtAltura").value);
     
     resp = peso / (altura * altura);
+    if(peso > 0, altura > 0){
+        return alert("valores errados");
+    }
 
     if(resp <= 18.5) {
         classific = " abaixo do peso"
